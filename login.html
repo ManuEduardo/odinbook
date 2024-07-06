@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>OdinBook</title>
+</head>
+<body>
+    <div class=" p-2 bg-cyan-800 min-h-screen">
+        <div class=" bg-gray-50 min-h-60 min-w-72 p-2 max-w-xl mx-auto rounded-lg shadow-xs">
+            <h2 class=" text-3xl text-center mt-8 font-semibold">Iniciar Sesión</h2>
+            <p class=" w-max mx-auto text-center mt-6 pb-6 max-w-xs italic font-thin">Bienvenido, ingresa tus datos para iniciar sesión</p>
+
+            <form action="/home" method="POST">
+                <div class=" mx-8">
+                    <input class=" block w-full p-4 border-2 border-solid rounded mt-8 mb-2"
+                    placeholder="Ingresa tu correo" type="email" name="email-user" id="email-user">
+                    <input class=" block w-full p-4 border-2 border-solid rounded mt-8 mb-2"
+                    placeholder="Ingresa tu contraseña" type="password" name="password-user" id="password-user">
+                </div>
+                <button type="submit"
+                class="block mx-auto p-3 bg- bg-cyan-950 text-xl rounded text-white my-6 shadow">
+                    Ingresar
+                </button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
