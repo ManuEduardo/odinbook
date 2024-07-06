@@ -11,9 +11,14 @@ type User struct {
 	Password string
 }
 
+type UserLogin struct {
+	User
+	KeepSession bool
+}
+
 func main() {
 
-	user_login := User{}
+	user_login := UserLogin{}
 
 	loginHandler := func(w http.ResponseWriter, r *http.Request) {
 		templ := template.Must(template.ParseFiles("login.html"))
